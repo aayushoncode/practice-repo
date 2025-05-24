@@ -1,7 +1,8 @@
 import React from 'react'
-// import Eye from '../../Eye'
+import Eye from '../../Eye'
 // import Api from './Api'
-import DataShow from './DataShow'
+// import DataShow from './DataShow'
+// import DataShow1 from './DataShow1'
 
 
 const Home = () => {
@@ -9,8 +10,9 @@ const Home = () => {
     <div>
      {/* <Api/> */}
 
-     {/* <Eye/> */}
-     <DataShow/>
+     <Eye/>
+     {/* <DataShow/> */}
+     {/* <DataShow1/> */}
     </div>
   )
 }

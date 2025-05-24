@@ -1,26 +1,41 @@
-// import React, { useState } from 'react'
-// import { FaEyeSlash } from 'react-icons/fa'
-// import { FaRegEye } from 'react-icons/fa'
+import React, { use, useState } from 'react'
+import { FaRegEye } from 'react-icons/fa'
+import { FaRegEyeSlash } from 'react-icons/fa'
 
-// const Eye = () => {
-//   const [eye, setEye] = useState(false)
+const Eye = () => {
+  const [showEye, setShowEye] = useState(true)
+  const [inputChange, setInputChange] = useState()
 
-//   return (
-//     <div className="w-full h-screen bg-slate-700 flex justify-center items-center  ">
-//       <div className="relative">
-//         <button  onClick={(e) => setEye(!eye)}{ (e)=>eye ? <FaEyeSlash className='text-xl ' />: <FaRegEye/>}
-//           className="text-xl absolute left-80 top-3 cursor-pointer text-white ">
-         
-//         </button>
-        
-//         <input
-//           type={eye ? 'Text' : 'password'}
-//           placeholder="password"
-//           className="w-90 h-10 border-2 rounded-md pl-4"
-//         />
-//       </div>
-//     </div>
-//   )
-// }
+  function onInputChange(e) {
+    const value = e.target.value
+    setInputChange(value)
+  }
 
-// export default Eye
+  return (
+    <div className="h-screen w-full bg-slate-800 flex items-center justify-center">
+      <div className="relative">
+        {showEye ? (
+          <FaRegEye
+            onClick={() => setShowEye(!showEye)}
+            className="text-2xl  cursor-pointer text-white  absolute top-7 right-5"
+          />
+        ) : (
+          <FaRegEyeSlash
+            onClick={() => setShowEye(!showEye)}
+            className="text-2xl  cursor-pointer text-white  absolute top-7 right-5"
+          />
+        )}
+
+        <input
+          onChange={onInputChange}
+          //   value={inputChange}
+          className="w-110  h-20 border-2 rounded-md text-xl pl-4  text-white font-bold "
+          placeholder="enter your 8 digit password"
+          type={showEye ? 'password' : 'text'}
+        />
+      </div>
+    </div>
+  )
+}
+
+export default Eye
