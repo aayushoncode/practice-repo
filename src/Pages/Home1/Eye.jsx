@@ -9,6 +9,9 @@ const Eye = () => {
   function onInputChange(e) {
     const value = e.target.value
     setInputChange(value)
+
+    console.log(value);
+    
   }
 
   return (
@@ -28,7 +31,7 @@ const Eye = () => {
 
         <input
           onChange={onInputChange}
-          //   value={inputChange}
+            // value={inputChange}
           className="w-110  h-20 border-2 rounded-md text-xl pl-4  text-white font-bold "
           placeholder="enter your 8 digit password"
           type={showEye ? 'password' : 'text'}
