@@ -40,10 +40,7 @@ const CountarySelector = () => {
           {/* <option    value="india" className="text-black">
             {item.india}
           </option> */}
-         
         </select>
-
-     
       ))}
     </div>
   )

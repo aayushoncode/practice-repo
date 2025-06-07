@@ -9,24 +9,15 @@ const showData1 = () => {
     { name: 'mannu', class: 12 },
   ]
 
-const [filterData , setFilterData] = useState(data)
+  const [filterData, setFilterData] = useState(data)
 
-function onChangeFilter (cls){
-  
-}
+  function onChangeFilter(cls) {}
 
-
-
-  return <div className='w-full h-screen bg-slate-700'>
-     
-
-     <div>
-
-     </div>
-
-
-
-  </div>
+  return (
+    <div className="w-full h-screen bg-slate-700">
+      <div></div>
+    </div>
+  )
 }
 
 export default showData1

@@ -13,7 +13,7 @@ const DataShow1 = () => {
 
   const [filterData, setFilterData] = useState(data)
 
-  const[searchInput , setSearchInput] = useState('')
+  const [searchInput, setSearchInput] = useState('')
 
   function onInputChange(e) {
     const value = e.target.value
@@ -22,22 +22,18 @@ const DataShow1 = () => {
     if (value == '') {
       setFilterData(data)
     } else {
-     const filtered = data.filter((item)=>item.class == value)
-       setFilterData(filtered)  
+      const filtered = data.filter((item) => item.class == value)
+      setFilterData(filtered)
     }
-
-  
   }
 
-  console.log(filterData);
-  
+  console.log(filterData)
 
   return (
     <div>
       <div className="h-[15vh] w-full bg-slate-800 flex justify-center items-center">
         <input
-
-        value={searchInput}
+          value={searchInput}
           onChange={onInputChange}
           className="text-white border-2 rounded-md w-80 h-12 pl-4"
           type="text"
@@ -47,10 +43,9 @@ const DataShow1 = () => {
 
       <div>
         {filterData.map((item, idx) => (
-          <div key={idx}> 
-            <span>  {idx + 1 } </span>                   name :  {item.name }
-            
-                    <span> class : {item.class} </span>
+          <div key={idx}>
+            <span> {idx + 1} </span> name : {item.name}
+            <span> class : {item.class} </span>
           </div>
         ))}
       </div>

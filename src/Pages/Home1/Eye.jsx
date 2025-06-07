@@ -3,7 +3,7 @@ import { FaRegEye } from 'react-icons/fa'
 import { FaRegEyeSlash } from 'react-icons/fa'
 
 const Eye = () => {
-  const [showEye, setShowEye] = useState(true)
+  const [showEye, setShowEye] = useState(false)
   const [inputChange, setInputChange] = useState()
 
   function onInputChange(e) {
