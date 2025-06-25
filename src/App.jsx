@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from './components/Card'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Layout from './routing folder/pages/Layout'
 // import Home from './Pages/Home1/Home'
 // import { Route, Routes } from 'react-router-dom'
 const App = () => {

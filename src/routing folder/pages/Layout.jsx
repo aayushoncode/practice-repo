@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Layout = () => {
+
+  const[isOpen , setIsOpen] =  useState(false)
+
   return (
-    <div>
+    <div >
+
+      <nav>
+        <Link to="/" classname=""></Link>
+      </nav>
       
     </div>
   )
