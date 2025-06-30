@@ -1,18 +1,18 @@
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 
-const Layout = () => {
+// const Layout = () => {
 
-  const[isOpen , setIsOpen] =  useState(false)
+//   const[isOpen , setIsOpen] =  useState(false)
 
-  return (
-    <div >
+//   return (
+//     <div >
 
-      <nav>
-        <Link to="/" classname=""></Link>
-      </nav>
+//       <nav>
+//         <Link to="/" classname=""></Link>
+//       </nav>
       
-    </div>
-  )
-}
+//     </div>
+//   )
+// }
 
-export default Layout
+// export default Layout
